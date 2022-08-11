@@ -1,0 +1,32 @@
+{
+  "tareas": [
+    {
+      "descripcion": "Jugar al COD Mobile",
+      "dia": "Ahora mismo papuh :V",
+      "recordatorio": false,
+      "id": 2,
+      "orden": 3
+    },
+    {
+      "descripcion": "Hacer ejercicio físico",
+      "dia": "Lunes 08 a las 16:30hs",
+      "recordatorio": true,
+      "id": 3,
+      "orden": 2
+    },
+    {
+      "descripcion": "Crear base de datos para el proyecto",
+      "dia": "Domingo 28, 22:00hs",
+      "recordatorio": true,
+      "id": 5,
+      "orden": 1
+    },
+    {
+      "descripcion": "Felicitar a Pedro Gonzalez",
+      "dia": "YA!!!!",
+      "recordatorio": true,
+      "orden": 0,
+      "id": 6
+    }
+  ]
+}

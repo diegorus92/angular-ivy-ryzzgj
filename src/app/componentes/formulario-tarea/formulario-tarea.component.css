@@ -1,0 +1,40 @@
+.formulario{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.seccion {
+    margin: 2% 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    margin-right: 5%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px gray solid;
+    width: 60%;
+    font-size: 1rem;
+}
+
+button{
+    width: 100%;
+}
+
+.error{
+    border: 4px rgb(255, 0, 0) solid;
+}
+
+.mensaje-error{
+    color: red;
+}
+

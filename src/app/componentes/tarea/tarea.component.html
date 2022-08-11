@@ -1,0 +1,8 @@
+<div 
+        [class.tarea] = "!Recordatorio" 
+        [class.tarea-recordatorio]= "Recordatorio"
+    >
+    <button (click)="eliminarTarea()"><fa-icon [icon]="faCoffee"></fa-icon></button>
+    <h3>{{tarea.descripcion}}</h3>
+    <h4>{{tarea.dia}}</h4>
+</div>

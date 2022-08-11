@@ -1,0 +1,7 @@
+.btn-selected{
+    background-color: green;
+}
+
+.btn-unselected{
+    background-color: red;
+}

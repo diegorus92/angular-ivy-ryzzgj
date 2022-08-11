@@ -1,0 +1,17 @@
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let tarea of tareas" cdkDrag>
+
+        <app-tarea [tarea]="tarea" (dblclick)="modificarRecordatorio(tarea)"></app-tarea> 
+    </div> 
+</div>
+<!--<ul>
+    <li type="none" *ngFor="let tarea of tareas">
+        <app-tarea [tarea]="tarea" (dblclick)="modificarRecordatorio(tarea)"></app-tarea>
+    </li>    
+</ul>-->
+
+<footer>
+    <a routerLink="/about">About</a>
+</footer>
+
+

@@ -1,0 +1,44 @@
+<div class="formulario">
+    <form [formGroup]="formulario" (ngSubmit)="onEnviar($event)">
+    
+        <div class="seccion">
+            <label for="descripcion">Descripción</label>
+            <input type="text" id="descripcion" 
+                placeholder="Escriba cual es la tarea"
+                formControlName="descripcion"
+                [ngClass] = "Descripcion?.touched && Descripcion?.errors ? 'error':''"
+            >
+        </div>
+        <section class="mensaje-error" *ngIf="Descripcion?.touched && Descripcion?.errors">
+            <p>No puede dejarse este campo vacío</p>
+        </section>
+        
+
+        <div class="seccion">
+            <label for="fecha">Fecha y hora</label>
+            <input type="text" id="fecha" 
+                placeholder="Indique fecha y hora"
+                formControlName="dia"
+                [ngClass]="Fecha?.touched && Fecha?.errors ? 'error':''"    
+            >
+        </div>
+        <section class="mensaje-error" *ngIf="Fecha?.touched && Fecha?.errors">
+            <p>No puede dejarse este campo vacío</p>
+        </section>
+
+
+
+        <div class="seccion">
+            <label for="recordatorio">Recordar</label>
+            <input type="checkbox" id="recordatorio"
+                formControlName="recordatorio"
+            >
+        </div>
+        
+        <section>
+            <button class="btn" type="submit">Guardar Tarea</button>
+        </section>
+    </form>
+</div>
+
+
